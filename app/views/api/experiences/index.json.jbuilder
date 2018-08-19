@@ -1,0 +1,1 @@
+json.message "in index page"
