@@ -9,7 +9,7 @@ class Api::CapstonesController < ApplicationController
       name: params[:input_name],
       description: params[:input_description],
       url: params[:input_url],
-      screenshot: params[:input_screenshop],
+      screenshot: params[:input_screenshot],
       student_id: current_user.id
     )
     @capstone.save!
@@ -28,7 +28,7 @@ class Api::CapstonesController < ApplicationController
     @capstone.name = params[:input_name] || @capstone.name
     @capstone.description = params[:input_description] || @capstone.description
     @capstone.url = params[:input_url] || @capstone.url
-    @capstone.screenshot = params[:input_screenshop] || @capstone.screenshot
+    @capstone.screenshot = params[:input_screenshot] || @capstone.screenshot
     @capstone.save!
     render "show.json.jbuilder"
   end
