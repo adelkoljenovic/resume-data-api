@@ -6,7 +6,7 @@ class Api::SkillsController < ApplicationController
 
   def create
     @skill = Skill.new(
-      name: params[:input_name],
+      skill_name: params[:input_name],
       student_id: current_user.id
     )
     @skill.save!
@@ -21,8 +21,8 @@ class Api::SkillsController < ApplicationController
 
   def update
     skill_id = params[:id]
-    @capstone = Capstone.find_by(id: skill_id)
-    @skill.name = params[:input_name] || @skill.name
+    @capstone = Capstone.find_by(id: skill_id)  # capstone should be skill
+    @skill.skill_name = params[:input_name] || @skill.skill_name
     @skill.save!
     render "show.json.jbuilder"
   end

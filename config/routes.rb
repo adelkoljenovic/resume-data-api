@@ -18,6 +18,14 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get '/experiences' => 'experiences#index'
+
+
+    get '/educations' => 'educations#index'
+    post '/educations' => 'educations#create'
+    get '/educations/:id' => 'educations#show'
+    patch '/educations/:id' => 'educations#update'
+    delete '/educations/:id' => 'educations#destroy'
+
     get '/experiences/:id' => 'experiences#show'
     post '/experiences' => 'experiences#create'
     patch '/experiences' => 'experiences#update'
@@ -39,7 +47,6 @@ Rails.application.routes.draw do
     get "skills/:id/edit" => "capstones#edit"
     patch "/skills/:id" => "skills#update"
     delete "/skills/:id" => "skills#destroy"
-
 
   end
 end
