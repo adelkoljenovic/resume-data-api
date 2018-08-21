@@ -71,8 +71,8 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 
 # 50.times do
 #   education = Education.new(
-#     start_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
-#     end_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
+#     start_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
+#     end_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
 #     degree: degrees.sample,
 #     university_name: Faker::University.name,
 #     details: Faker::Hipster.paragraph,
@@ -94,8 +94,8 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 
 # 50.times do
 #   experience = Experience.new(
-#     start_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
-#     end_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
+#     start_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
+#     end_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
 #     job_title: Faker::Company.profession,
 #     company_name: Faker::Company.name,
 #     details: Faker::Hipster.paragraph,
@@ -126,11 +126,11 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 #   student.save
 # end
 
-# student_ids = []
-# students = Student.all
-# students.each do |student|
-#   student_ids << student.id
-# end
+student_ids = []
+students = Student.all
+students.each do |student|
+  student_ids << student.id
+end
 
 # 50.times do
 #   skill = Skill.new(
@@ -142,8 +142,8 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 
 # 50.times do
 #   education = Education.new(
-#     start_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
-#     end_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
+#     start_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
+#     end_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
 #     degree: degrees.sample,
 #     university_name: Faker::University.name,
 #     details: Faker::Hipster.paragraph,
@@ -165,8 +165,8 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 
 # 50.times do
 #   experience = Experience.new(
-#     start_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
-#     end_date: "0#{rand(1..9)}-#{rand(10..28)}-#{rand(1900..2018)}",
+#     start_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
+#     end_date: "#{rand(1900..2018)}-0#{rand(1..9)}-#{rand(10..28)}",
 #     job_title: Faker::Company.profession,
 #     company_name: Faker::Company.name,
 #     details: Faker::Hipster.paragraph,
