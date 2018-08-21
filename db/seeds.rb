@@ -33,7 +33,7 @@ real_twitter_handles = [
   "@SenDavidPerdue",
   "@SenatorIsakson"
 ]
-degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
+degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD","Certificate of Completion","Certificate of Participation"]
 
 # For User Model
 # 20.times do
