@@ -15,7 +15,7 @@ class Api::EducationsController < ApplicationController
     render "show.json.jbuilder"
   end
 
- def create
+  def create
     @education = Education.new(
       start_date: params[:start_date],
       end_date: params[:end_date],

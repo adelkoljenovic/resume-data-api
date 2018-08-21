@@ -7,6 +7,7 @@ class Api::SessionsController < ApplicationController
           user: user.id, # the data to encode
           exp: 24.hours.from_now.to_i # the expiration time
         },
+        # Rails.application.credentials.secret_key_base,
         Rails.application.credentials.fetch(:secret_key_base), # the secret key
         'HS256' # the encryption algorithm
       )
