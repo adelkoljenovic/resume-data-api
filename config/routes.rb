@@ -5,5 +5,9 @@ Rails.application.routes.draw do
     get '/experiences' => 'experiences#index'
 
     get '/students' => 'students#index'
+    get '/students/:id' => 'students#show'
+    post '/students' => 'students#create'
+    # for front-end authentication compatability
+    get '/users' => 'students#index'
   end
 end

@@ -1,1 +1,1 @@
-json.message "hello"
+json.array! @students, partial: 'student', as: :student
