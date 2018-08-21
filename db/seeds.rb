@@ -126,11 +126,11 @@ degrees = ["AA","AS","BA","BS","MA","MS","MBA","PhD","MD"]
 #   student.save
 # end
 
-student_ids = []
-students = Student.all
-students.each do |student|
-  student_ids << student.id
-end
+# student_ids = []
+# students = Student.all
+# students.each do |student|
+#   student_ids << student.id
+# end
 
 # 50.times do
 #   skill = Skill.new(
