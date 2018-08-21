@@ -10,6 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
+ActiveRecord::Schema.define(version: 2018_08_19_171731) do
+
+
 ActiveRecord::Schema.define(version: 2018_08_19_171321) do
 
   # These are extensions that must be enabled in order to support this database
@@ -33,6 +37,9 @@ ActiveRecord::Schema.define(version: 2018_08_19_171321) do
     t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+
+    t.integer "student_id"
+
   end
 
   create_table "experiences", force: :cascade do |t|
