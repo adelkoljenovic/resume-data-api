@@ -26,7 +26,8 @@ Edit student/user
       twitter_handle: params[:twitter_handle]
       website_url: params[:website_url]
       online_resume_url: params[:online_resume_url]
-      github_url: params[:github_url]      photo_url: params[:photo_url]
+      github_url: params[:github_url]
+      photo_url: params[:photo_url]
 
 Create skill
       skill_name: params[:input_name]
