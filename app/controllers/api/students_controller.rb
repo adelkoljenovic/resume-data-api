@@ -16,12 +16,15 @@ class Api::StudentsController < ApplicationController
       website_url: params[:website_url],
       online_resume_url: params[:online_resume_url],
       github_url: params[:github_url],
-      photo_url: params[:photo_url]
-      # password will be created with Student profile
-      # password_digest: params[:password_digest]
+      photo_url: params[:photo_url],
+      password: params[:password],
+      password_confirmation: params[:password_confirmation]
     )
-    @student.save
-    render "show.json.jbuilder"
+    if @student.save
+      render "show.json.jbuilder"
+    else
+      render json: {errors: @user.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
   def show
