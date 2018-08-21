@@ -1,1 +1,1 @@
-json.message "in index page"
+json.array! @experiences, partial: 'experience', as: :experience
