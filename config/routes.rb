@@ -40,6 +40,5 @@ Rails.application.routes.draw do
     patch "/skills/:id" => "skills#update"
     delete "/skills/:id" => "skills#destroy"
 
-
   end
 end
