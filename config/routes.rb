@@ -9,7 +9,12 @@ Rails.application.routes.draw do
     get '/students/:id' => 'students#show'
     patch '/students/:id' => 'students#update'
     delete '/students/:id' => 'students#destroy'
+
     # for front-end authentication compatability
     get '/users' => 'students#index'
+    post '/users' => 'students#create'
+    get '/users/:id' => 'students#show'
+    patch '/users/:id' => 'students#update'
+    delete '/users/:id' => 'students#destroy'
   end
 end
