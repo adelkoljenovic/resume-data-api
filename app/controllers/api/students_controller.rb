@@ -1,6 +1,10 @@
 class Api::StudentsController < ApplicationController
   def index
-    @students = Student.all
+    if current_user
+      @students = Student.find(current_user.id)
+    else
+      @students = Student.all
+    end
     render "index.json.jbuilder"
   end
 
